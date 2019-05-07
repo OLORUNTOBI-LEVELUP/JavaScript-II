@@ -74,17 +74,16 @@ contains("Pencil", items, result => {
 
 /* STRETCH PROBLEM */
 
- // removeDuplicates removes all duplicate values from the given array.
-  // Pass the duplicate free array to the callback function.
-  // Do not mutate the original array.
+// removeDuplicates removes all duplicate values from the given array.
+// Pass the duplicate free array to the callback function.
+// Do not mutate the original array.
 
-  let duplicates = [ 1,3,4,4,4,5,5,5,7,7,8,8,0]
+let duplicates = [1, 3, 4, 4, 4, 5, 5, 5, 7, 7, 8, 8, 0];
 function removeDuplicates(array, cb) {
- 
   let newArray = new Set(array);
   cb([...newArray]);
 }
 
 removeDuplicates(duplicates, noDuplicates => {
-  console.log(`numbers with duplicates removed: ${noDuplicates}`)
-})
+  console.log(`numbers with duplicates removed: ${noDuplicates}`);
+});
