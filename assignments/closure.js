@@ -3,15 +3,13 @@
 function outer() {
   var b = 10;
   function inner() {
-       
-        var a = 20; 
-        console.log(a+b);
-   }
+    var a = 20;
+    console.log(a + b);
+  }
   return inner;
 }
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
-
 
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
