@@ -14,6 +14,14 @@ function outer() {
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
   // Return a function that when invoked increments and returns a counter variable.
+  let score = 0;
+
+  function inner() {
+    score = score + 1;
+    console.log(score);
+  }
+
+  return inner
 };
 // Example usage: const newCounter = counter();
 // newCounter(); // 1
